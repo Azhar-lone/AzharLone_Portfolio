@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
     return (
 
         <div
-            className={` rounded-l-lg fixed  top-2 right-0 `}
+            className={` rounded-l-lg fixed top-5 right-5 w-8 h-8`}
         >
             <ModeToggle />
         </div>

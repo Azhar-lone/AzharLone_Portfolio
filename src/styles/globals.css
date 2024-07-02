@@ -62,7 +62,7 @@
   
 }
 
-/* to remove scrollbar */
+to remove scrollbar
 body::-webkit-scrollbar {
   display: none;
 }

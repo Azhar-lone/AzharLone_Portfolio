@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 
 // components
 import Nav from "@/components/myUi/Nav";
+import Footer from "@/components/myUi/Footer"
 
 // context
 import { ThemeProvider } from "@/components/context/theme-provider"
@@ -33,6 +34,7 @@ export default function RootLayout({
         >
           <Nav />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

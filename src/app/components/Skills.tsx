@@ -1,7 +1,6 @@
 "use client"
 import { Progress } from "@/components/ui/progress"
 import { useEffect, useState } from "react";
-import Container from "@/components/myUi/container";
 
 interface progressType {
     value: number,
@@ -59,7 +58,9 @@ export default function Skills() {
 
 
     return (
-        < Container>
+        < div
+        className=' transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%] md:w-[60%] mx-auto shadow-2xl'
+        >
 
             <h1 className="text-4xl border-b-2 border-foreground p-4">My Skills</h1>
 
@@ -73,7 +74,7 @@ export default function Skills() {
                     </div>
                 ))}
             </div>
-        </Container>
+        </div>
     );
 }
 
