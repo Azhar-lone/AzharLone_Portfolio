@@ -1,18 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
-import { resolve } from "node:path"
-
+import AzharLone from "../../../images/AzharLone.jpg"
 
 const Introduction: React.FC = () => {
     return (
-        <div className=' transition-all flex ' >
-            <Image src={resolve("images/1.png")} alt='Img' width={100} height={100}  />
-            <div className='text-primary text-4xl'>
-                Hello i am Azhar Lone ,full stack developer.
-                Welcome to my portfolio Website
-            </div>
+        <div className=' transition-all flex flex-col  gap-2 p-5'
+           
+        >
+            <Image src={AzharLone} alt='Img' className=' mx-auto    rounded-lg   ' />
+            <div className="shadow-2xl shadow-foreground ">
 
+            <h1 className='text-primary text-4xl border-b-2 w-fit border-primary '>
+               Introduction
+            </h1>
+{/*<p className="pl-5 text-lg">Hello ,I am AzharLone ,full Stack developer,primary experienced in MERN stack.
+i Know HTML,css,JavaScript,NodeJs,ExpressJs,mongoose,Sql,ShadCn/Ui,Website Security and linux.
+</p>*/}
         </div>
+         </div>
     )
 }
 
