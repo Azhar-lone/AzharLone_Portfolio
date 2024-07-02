@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/myUi/ProjectCard";
-import Container from "@/components/myUi/container";
 
 // Images
 import shopOnline from "../../../images/projects/shop-online.png"
@@ -61,7 +60,7 @@ const Projects: React.FC = () => {
   });
 
   return (
-      < Container >
+      < div >
         <h2 className="text-4xl border-b-2 border-foreground p-4">
           My Projects
         </h2>
@@ -92,7 +91,7 @@ const Projects: React.FC = () => {
             })}
           </div>
         </Tabs>
-      </Container>
+      </div>
   );
 };
 

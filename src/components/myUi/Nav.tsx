@@ -4,7 +4,6 @@
 import React, { useState } from "react";
 // Icons
 
-
 // importing Shadcn Components
 
 //My components 
@@ -20,7 +19,7 @@ const Nav: React.FC = () => {
     return (
 
         <div
-            className={` rounded-l-lg fixed  top-2 right-2  `}
+            className={` rounded-l-lg fixed  top-2 right-0 `}
         >
             <ModeToggle />
         </div>
