@@ -1,7 +1,7 @@
 "use client"
 
 // importing dependencies
-import React, { useState } from "react";
+import React from "react";
 // Icons
 
 // importing Shadcn Components
