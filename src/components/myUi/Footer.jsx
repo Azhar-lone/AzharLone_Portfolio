@@ -19,7 +19,7 @@ const Footer = () => {
         <div
             className='relative bottom-0  items-center flex-col flex justify-center gap-4 p-2  border-t-2 border-foreground shadow-2xl shadow-primary mt-5 '
         >
-           <h1 className='text-3xl text-primary'>Developed by Azhar-lone</h1> 
+           <h1 className=' text-2xl text-primary'>Developed by Azhar-lone</h1> 
 
             <div className='flex gap-2 '>
                 {icons.map((icon, index) => {

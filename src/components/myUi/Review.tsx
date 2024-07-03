@@ -15,7 +15,7 @@ interface review {
 }
 const Review: React.FC<review> = ({ review }) => {
     return (
-        <div className="flex md:gap-8 gap-2 p-5 flex-col md:w-[48%]  shadow-xl shadow-foreground">
+        <div className="flex md:gap-8 gap-2 p-5 flex-col md:w-[48%] w-[99%] shadow-xl shadow-foreground rounded">
 
             {/* Owner Info */}
 
@@ -37,14 +37,14 @@ const Review: React.FC<review> = ({ review }) => {
 
                         {Array(5).fill(0).map((_, i: number) => (
                             <>
-                                {review.rating && ((review.rating - 0.5) > i) && < AiFillStar className='text-primary size-10' key={i} />}
+                                {review.rating && ((review.rating - 0.5) > i) && < AiFillStar className='text-yellow-500 size-10' key={i} />}
 
                             </>
                         ))}
                     </div>
                 }
             </div>
-            <p>{review.review}</p>
+            <p >{review.review}</p>
         </div>
     )
 }

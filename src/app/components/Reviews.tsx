@@ -7,12 +7,12 @@ const Reviews: React.FC = () => {
 
 
     return (
-        <div className="flex flex-wrap gap-6  p-4 flex-col ">
-            <h3 className="text-4xl font-bol">
+        <div className="flex flex-wrap gap-6  py-5 flex-col w-full shadow-2xl shadow-destructive">
+            <h3 className="text-4xl  p-4 ">
                 Reviews
             </h3>
 
-            <div className="flex flex-wrap gap-3  p-4  ">
+            <div className="flex flex-wrap gap-3 justify-center ">
 
                 {reviews.map((review: reviewType, i: number) => (
                     <Review key={i} review={review} />
