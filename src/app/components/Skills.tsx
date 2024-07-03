@@ -52,17 +52,17 @@ export default function Skills() {
         ])
 
     useEffect(() => {
-        
-        setProgress((prev) => progressArray)
+        const timer = setTimeout(() => setProgress(progressArray), 500)
+        return () => clearTimeout(timer)
     }, [])
 
 
     return (
         < div
-        className=' transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%] md:w-[60%] mx-auto shadow-2xl'
+            className=' transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%] md:w-[80%] mx-auto shadow-lg'
         >
 
-            <h1 className="text-4xl border-b-2 border-foreground p-4">My Skills</h1>
+            <h1 className="text-4xl border-b-2 border-foreground w-fit p-4">My Skills</h1>
 
             <div className="flex flex-wrap gap-8 w-[100%] mx-auto ">
 

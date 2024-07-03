@@ -1,14 +1,9 @@
-"use client";
-import React, { useState } from "react";
-
 
 // Images
 import shopOnline from "@/Data/Images/projects/shop-online.png"
-
+import libraryOnline from "@/Data/Images/projects/library-online.png"
 
 // Components
-
-import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 
 // Custom Components
 import ProjectCard from "@/components/myUi/ProjectCard";
@@ -33,17 +28,17 @@ const projectData: projectType[] = [
     category: "Mern Stack",
     name: "shope-Online ",
     description:
-      "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui and more",
+      "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
     link: "",
     github: "https://github.com/Azhar-lone/shop-online.git",
   },
 
   {
-    image: shopOnline,
-    category: "Mern Stack",
+    image: libraryOnline,
+    category: "Library-Online",
     name: "Library-Online ",
     description:
-      "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui and more",
+      "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss, and more ",
     link: "",
     github: "https://github.com/Azhar-lone/library-Online.git",
   }
@@ -56,55 +51,25 @@ const projectData: projectType[] = [
 
 
 
-//  remove category duplicates
-const uniqueCategories = [
-  "all projects",
-  ...new Set(projectData.map((item) => item.category)),
-];
+
 
 const Projects: React.FC = () => {
-  const [categories, setCategories] = useState<string[]>(uniqueCategories);
-  const [category, setCategory] = useState<string>("all projects");
 
-  const filteredProjects = projectData.filter((project) => {
-    // if category is all projects then return all projects , else filter by category.
-    return category === "all projects"
-      ? project
-      : project.category === category;
-  });
+
 
   return (
-    < div  className="w-full h-fit">
-      <h2 className="text-4xl border-b-2 border-foreground p-4">
+    < div className="w-full   ">
+      <h2 className="text-4xl p-4">
         My Projects
       </h2>
-      {/* tabs  */}
-      <Tabs defaultValue={category} >
-        <TabsList className="flex flex-wrap gap-2 h-fit">
-          {categories.map((category, index) => {
-            return (
-              <TabsTrigger
-                onClick={() => setCategory(category)}
-                value={category}
-                key={index}
-                className="capitalize"
-              >
-                {category}
-              </TabsTrigger>
-            );
-          })}
-        </TabsList>
-        {/* tabs content  */}
-        <div className="flex   flex-wrap md:w-[40%]">
-          {filteredProjects.map((project, index) => {
-            return (
-              <TabsContent value={category} key={index}>
-                <ProjectCard project={project} />
-              </TabsContent>
-            );
-          })}
-        </div>
-      </Tabs>
+
+      <div className="flex  gap-5 flex-wrap  flex-row ">
+        {projectData.map((project: projectType, index: number) => {
+          return (
+            <ProjectCard project={project} key={index} />
+          );
+        })}
+      </div>
     </div>
   );
 };

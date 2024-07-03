@@ -17,15 +17,15 @@ import {
 const Footer = () => {
     return (
         <div
-            className='relative bottom-0  items-center flex-col flex justify-center  p-2  shadow-2xl shadow-foreground mt-5'
+            className='relative bottom-0  items-center flex-col flex justify-center gap-4 p-2  border-t-2 border-foreground shadow-2xl shadow-primary mt-5 '
         >
-           <h1 className='text-2xl'>Developed by Azhar-lone</h1> 
+           <h1 className='text-3xl text-primary'>Developed by Azhar-lone</h1> 
 
             <div className='flex gap-2 '>
                 {icons.map((icon, index) => {
                     return (
-                        <Link href={icon.path} key={index} className='hover:bg '>
-                            <div className={`p-2 size-10 `}>{icon.name}</div>
+                        <Link href={icon.path} key={index} className='hover:bg ' target='_blank'>
+                            <div className={`p-2`}>{icon.name}</div>
                         </Link>
                     );
                 })}
@@ -45,24 +45,24 @@ export default Footer
 
 const icons = [
     {
-        path: "",
-        name: <RiInstagramFill />,
+        path: "#",
+        name: <RiInstagramFill className='size-10' />,
     },
     {
-        path: "",
-        name: <RiGithubFill />,
+        path: "https://github.com/Azhar-lone",
+        name: <RiGithubFill className='size-10'/>,
     },
     {
-        path: "",
-        name: <RiTwitterXFill />,
+        path: "#",
+        name: <RiTwitterXFill  className='size-10'/>,
     },
     {
-        path: "",
-        name: <RiYoutubeFill />,
+        path: "#",
+        name: <RiYoutubeFill className='size-10'/>,
     },
     {
-        path: "",
-        name: <RiLinkedinFill />,
+        path: "#",
+        name: <RiLinkedinFill className='size-10  '/>,
     },
 ];
 
