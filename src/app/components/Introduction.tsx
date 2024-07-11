@@ -42,7 +42,7 @@ const Introduction: React.FC = () => {
             <div className='flex gap-2'>
 
                 <Button className='flex gap-1' variant={"secondary"}>Chat with me<Phone /></Button>
-                <a href="src/Data/AzharResume.pdf" download={"AzharLone_CV.pdf"}  > <Button className='flex gap-1 animate-bounce' variant={"secondary"}  >Download CV<Download /></Button></a>
+                <a href="/AzharResume.pdf" download={"AzharLone_CV.pdf"}  > <Button className='flex gap-1 animate-bounce' variant={"secondary"}  >Download CV<Download /></Button></a>
 
 
             </div>
