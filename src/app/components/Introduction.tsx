@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // Framer motion
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 // icons
 import { Phone, Download } from "lucide-react";
 // images
@@ -13,16 +13,16 @@ import { Button } from "@/components/ui/button";
 
 const Introduction: React.FC = () => {
   return (
-    <motion.div
-        animate={{
-          width: "100%",
-        }}
-        initial={{
-          width: "0",
-        }}
-        transition={{
-          delay: 5,
-        }}
+    <div
+        // animate={{
+        //   width: "100%",
+        // }}
+        // initial={{
+        //   width: "0",
+        // }}
+        // transition={{
+        //   delay: 5,
+        // }}
       className=" transition-all flex flex-col gap-5 p-4 rounded-lg shadow-primary w-[100%] md:w-[60%] mx-auto shadow-xl  "
     >
       <div className="  gap-2 flex flex-col md:flex-row md:items-none items-center ">
@@ -64,7 +64,7 @@ const Introduction: React.FC = () => {
           </Button>
         </a>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
