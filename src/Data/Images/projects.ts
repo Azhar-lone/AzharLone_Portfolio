@@ -3,12 +3,8 @@ import shopOnline from "@/Data/Images/projects/shop-online.png";
 import libraryOnline from "@/Data/Images/projects/library-online.png";
 import portfolio from "@/Data/Images/projects/portfolio.png";
 
-
-
-
 //import Types
-import { projectType, projectDetailType } from "@/types/Projects";
-
+import { projectType } from "@/types/Projects";
 
 export const projectData: projectType[] = [
   {
