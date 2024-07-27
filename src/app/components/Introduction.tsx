@@ -14,15 +14,15 @@ import { Button } from "@/components/ui/button";
 const Introduction: React.FC = () => {
   return (
     <div
-        // animate={{
-        //   width: "100%",
-        // }}
-        // initial={{
-        //   width: "0",
-        // }}
-        // transition={{
-        //   delay: 5,
-        // }}
+      // animate={{
+      //   width: "100%",
+      // }}
+      // initial={{
+      //   width: "0",
+      // }}
+      // transition={{
+      //   delay: 5,
+      // }}
       className=" transition-all flex flex-col gap-5 p-4 rounded-lg shadow-primary w-[100%] md:w-[60%] mx-auto shadow-xl  "
     >
       <div className="  gap-2 flex flex-col md:flex-row md:items-none items-center ">

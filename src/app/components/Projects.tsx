@@ -11,7 +11,7 @@ import { projectData } from "@/Data/Images/projects";
 
 const Projects: React.FC = () => {
   return (
-    <div className="w-full   ">
+    <div className="w-full   " id="projects">
       <h2 className="text-4xl p-4">My Projects</h2>
 
       <div className="flex  gap-5 flex-wrap  flex-row ">

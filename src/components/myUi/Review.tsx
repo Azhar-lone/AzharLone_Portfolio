@@ -14,12 +14,12 @@ interface review {
 }
 const Review: React.FC<review> = ({ review }) => {
   return (
-    <div className="flex md:gap-8 gap-2 p-5 flex-col md:w-[48%] w-[99%] shadow-xl shadow-foreground rounded">
+    <div className="flex   flex-col md:w-[48%] w-[99%] shadow-xl shadow-foreground rounded">
       {/* Owner Info */}
 
-      <div className="flex justify-between md:w-[70%]">
+      <div className="flex justify-between md:w-[70%] p-3">
         {/* profile Picture */}
-        <div className="flex gap-5 flex-col">
+        <div className="flex  flex-col ">
           <Avatar className="size-16">
             <AvatarFallback>{review.owner.name.charAt(0)}</AvatarFallback>
             <AvatarImage src={review.owner.profilePic} />
@@ -52,7 +52,7 @@ const Review: React.FC<review> = ({ review }) => {
           </div>
         )}
       </div>
-      <p>{review.review}</p>
+      <p className=" w-full p-2">{review.review}</p>
     </div>
   );
 };
