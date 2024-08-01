@@ -1,10 +1,16 @@
 "use client";
 import { Progress } from "@/components/ui/progress";
 import { useEffect, useState } from "react";
+import { IconType } from "react-icons";
+
+// icons
+import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs } from "react-icons/fa"
+
 
 interface progressType {
   value: number;
   text: string;
+  Icon?: IconType
 }
 
 export default function Skills() {
@@ -12,18 +18,29 @@ export default function Skills() {
     {
       value: 0,
       text: "Html",
+      Icon: FaHtml5
     },
     {
       value: 0,
       text: "Css",
+      Icon: FaCss3
+
     },
     {
       value: 0,
       text: "JavaScript",
+      Icon: FaJs
+
     },
     {
       value: 0,
       text: "TypeScript",
+    },
+    {
+      value: 0,
+      text: "React",
+      Icon: FaReact
+
     },
     {
       value: 0,
@@ -32,6 +49,8 @@ export default function Skills() {
     {
       value: 0,
       text: "NodeJs",
+      Icon: FaNodeJs
+
     },
     {
       value: 0,
@@ -62,20 +81,23 @@ export default function Skills() {
 
   return (
     <div
-      className=" transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%] md:w-[80%] mx-auto shadow-lg"
+      className=" transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%]  mx-auto shadow-lg"
       id="skills"
     >
       <h1 className="text-4xl border-b-2 border-foreground w-fit p-4">
         My Skills
       </h1>
 
-      <div className="flex flex-wrap gap-8 w-[100%] mx-auto ">
+      <div className="flex flex-col flex-wrap gap-8 w-[100%] mx-auto ">
         {progress.map((ele: progressType, i: number) => (
           <div
-            className="flex md:w-[45%] gap-3 items-center flex-col md:flex-row w-[90%]"
+            className="flex gap-3 items-center flex-col  w-[90%]"
             key={i}
-          >
-            <h1 className="text-3xl w-fit">{ele.text}</h1>
+          ><div className="flex gap-2 items-center">
+              <h1 className="text-3xl w-fit">{ele.text}</h1>
+
+              {/* {ele.Icon} */}
+            </div>
             <Progress
               value={ele.value}
               className="h-6 w-[100%] border-foreground"
@@ -103,6 +125,12 @@ let progressArray: progressType[] = [
   {
     value: 90,
     text: "TypeScript",
+  },
+  {
+    value: 90,
+    text: "React",
+    Icon: FaReact
+
   },
   {
     value: 75,

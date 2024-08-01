@@ -11,32 +11,34 @@ import {
   RiGoogleFill,
 } from "react-icons/ri";
 
-
+import Container from "./Container";
 
 const Footer = () => {
   return (
-    <div
-      className="relative bottom-0  items-center flex-col flex justify-center gap-4 p-2  border-t-2 border-foreground shadow-2xl shadow-primary mt-5 "
-      id="contacts"
-    >
-      <h1 className=" text-2xl text-primary">Developed by Azhar-lone</h1>
-      <h1 className=" text-2xl ">Contacts</h1>
+    <Container>
+      <div
+        className="relative bottom-0  items-center flex-col flex justify-center gap-4 p-2  border-t-2 border-foreground shadow-2xl shadow-primary mt-5 "
+        id="contacts"
+      >
+        <h1 className=" text-2xl text-primary">Developed by Azhar-lone</h1>
+        <h1 className=" text-2xl ">Contacts</h1>
 
-      <div className="flex gap-2 ">
-        {icons.map((icon, index) => {
-          return (
-            <Link
-              href={icon.path}
-              key={index}
-              className="hover:bg "
-              target="_blank"
-            >
-              <div className={`p-2`}>{icon.name}</div>
-            </Link>
-          );
-        })}
+        <div className="flex gap-2 ">
+          {icons.map((icon, index) => {
+            return (
+              <Link
+                href={icon.path}
+                key={index}
+                className="hover:bg "
+                target="_blank"
+              >
+                <div className={`p-2`}>{icon.name}</div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

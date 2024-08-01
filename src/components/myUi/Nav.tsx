@@ -9,7 +9,7 @@ import Link from "next/link";
 
 //My components
 import { ModeToggle } from "./dark-mode";
-
+import Container from "./Container";
 let NavItems = [
   {
     text: "Projects",
@@ -31,17 +31,19 @@ let NavItems = [
 
 const Nav: React.FC = () => {
   return (
-    <div
-      className={` mx-auto w-fit shadow-2xl shadow-secondary-foreground p-4 rounded-b-2xl flex items-center gap-4 `}
-    >
-      <ModeToggle />
-      {NavItems.map((item, index) => (
-        <Link href={item.href} key={index}>
-          {" "}
-          {item.text}
-        </Link>
-      ))}
-    </div>
+    <Container>
+      <div
+        className={` mx-auto w-fit shadow-2xl shadow-secondary-foreground p-4 rounded-b-2xl flex items-center gap-4 `}
+      >
+        <ModeToggle />
+        {NavItems.map((item, index) => (
+          <Link href={item.href} key={index}>
+            {" "}
+            {item.text}
+          </Link>
+        ))}
+      </div>
+    </Container>
   );
 };
 
