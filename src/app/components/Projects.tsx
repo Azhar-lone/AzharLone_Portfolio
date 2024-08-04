@@ -14,7 +14,8 @@ const Projects: React.FC = () => {
     <div className="w-full   " id="projects">
       <h2 className="text-4xl p-4">My Projects</h2>
       <div className="flex gap-2 items-center justify-center">
-        <Button>MERN</Button>
+        <Button>All</Button>
+        <Button variant={"outline"}>MERN</Button>
         <Button variant={"outline"}>NextJs</Button>
         <Button variant={"outline"}>Fastify</Button>
         <Button variant={"outline"}>React</Button>
