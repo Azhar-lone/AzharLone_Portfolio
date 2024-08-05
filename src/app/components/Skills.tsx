@@ -4,13 +4,12 @@ import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
 
 // icons
-import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs } from "react-icons/fa"
-
+import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs } from "react-icons/fa";
 
 interface progressType {
   value: number;
   text: string;
-  Icon?: IconType
+  Icon?: IconType;
 }
 
 export default function Skills() {
@@ -18,19 +17,17 @@ export default function Skills() {
     {
       value: 0,
       text: "Html",
-      Icon: FaHtml5
+      Icon: FaHtml5,
     },
     {
       value: 0,
       text: "Css",
-      Icon: FaCss3
-
+      Icon: FaCss3,
     },
     {
       value: 0,
       text: "JavaScript",
-      Icon: FaJs
-
+      Icon: FaJs,
     },
     {
       value: 0,
@@ -39,8 +36,7 @@ export default function Skills() {
     {
       value: 0,
       text: "React",
-      Icon: FaReact
-
+      Icon: FaReact,
     },
     {
       value: 0,
@@ -49,8 +45,7 @@ export default function Skills() {
     {
       value: 0,
       text: "NodeJs",
-      Icon: FaNodeJs
-
+      Icon: FaNodeJs,
     },
     {
       value: 0,
@@ -72,6 +67,10 @@ export default function Skills() {
       value: 0,
       text: "Linux",
     },
+    {
+      value: 0,
+      text: "Shadcn/ui",
+    },
   ]);
 
   useEffect(() => {
@@ -90,10 +89,8 @@ export default function Skills() {
 
       <div className="flex flex-col flex-wrap gap-8 w-[100%] mx-auto ">
         {progress.map((ele: progressType, i: number) => (
-          <div
-            className="flex gap-3 items-center flex-col  w-[90%]"
-            key={i}
-          ><div className="flex gap-2 items-center">
+          <div className="flex gap-3 items-center flex-col  w-[90%]" key={i}>
+            <div className="flex gap-2 items-center">
               <h1 className="text-3xl w-fit">{ele.text}</h1>
 
               {/* {ele.Icon} */}
@@ -129,8 +126,7 @@ let progressArray: progressType[] = [
   {
     value: 90,
     text: "React",
-    Icon: FaReact
-
+    Icon: FaReact,
   },
   {
     value: 75,
@@ -160,5 +156,9 @@ let progressArray: progressType[] = [
   {
     value: 90,
     text: "Linux",
+  },
+  {
+    value: 90,
+    text: "Shadcn/ui",
   },
 ];

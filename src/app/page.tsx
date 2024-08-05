@@ -5,8 +5,8 @@ import Reviews from "./components/Reviews";
 import Experience from "./components/Experience";
 import Roles from "./components/Roles";
 import Aboutme from "./components/About";
-
-
+import Services from "./components/Services";
+import Languages from "./components/Languages";
 import Container from "@/components/myUi/Container";
 export default function Home() {
   return (
@@ -24,6 +24,9 @@ export default function Home() {
         <Experience />
         <hr />
         <Roles />
+        <hr />
+        <Languages />
+        <Services />
         <hr />
         <Reviews />
         <hr />

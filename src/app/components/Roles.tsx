@@ -4,7 +4,7 @@ const Roles = () => {
   return (
     <div
       className="  w-[100%]  shadow-2xl shadow-secondary-foreground mx-auto  "
-      id="projects"
+      id="roles"
     >
       <h2 className="text-4xl p-4">What Can i Do?</h2>
       <h1 className="text-3xl text-primary p-4">

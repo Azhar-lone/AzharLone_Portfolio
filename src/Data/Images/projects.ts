@@ -10,7 +10,7 @@ import { projectType } from "@/types/Projects";
 export const projectData: projectType[] = [
   {
     image: shopOnline,
-    category: "Mern Stack",
+    category: "MERN",
     name: "shope-Online ",
     description:
       "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
@@ -21,7 +21,7 @@ export const projectData: projectType[] = [
 
   {
     image: libraryOnline,
-    category: "MERN Stack",
+    category: "MERN",
     name: "Library-Online ",
     description:
       "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss, and more ",
@@ -71,3 +71,5 @@ export const projectData: projectType[] = [
 //     }]
 //   },
 // ];
+
+export let categories: string[] = ["All", "MERN", "NextJs", "React"];
