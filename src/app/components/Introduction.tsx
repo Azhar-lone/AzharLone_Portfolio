@@ -13,7 +13,7 @@ import AzharLone from "@/Data/Images/AzharLone.jpg";
 // Components
 const Introduction: React.FC = () => {
   return (
-    <div className="  transition-all flex flex-col  gap-2 p-4 rounded-lg w-[100%]  mx-auto md:mx-0  md:w-[30%] md:left-0 md:fixed md:top-1   md:bg-secondary">
+    <div className="  transition-all flex flex-col  gap-2 p-4 rounded-lg w-[100%]  mx-auto lg:mx-0  lg:w-[30%] lg:left-0 lg:fixed lg:top-1   lg:bg-secondary">
       <div className="  gap-2 flex flex-col   items-center">
         {/* image */}
         <Image src={AzharLone} alt="Img" className="  h-72 w-full rounded   " />
