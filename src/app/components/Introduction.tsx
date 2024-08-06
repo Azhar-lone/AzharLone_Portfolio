@@ -27,7 +27,7 @@ const Introduction: React.FC = () => {
           <h1 className=" text-4xl  h-fit w-fit ">Full Stack Developer</h1>
           <div className=" flex gap-2">
             <h1>azharlonem@gmail.com</h1>
-            <h1>+923555813744</h1>
+            <h1>+923555812744</h1>
           </div>
         </div>
       </div>
