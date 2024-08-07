@@ -14,7 +14,7 @@ export const projectData: projectType[] = [
     name: "shope-Online ",
     description:
       "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
-    link: "#",
+    link: "shop-online-static.netlify.app/",
     github: "https://github.com/Azhar-lone/shop-online.git",
     id: 1,
   },
