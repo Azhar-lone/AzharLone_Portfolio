@@ -16,17 +16,17 @@ export default function Home() {
       <Container className="flex flex-col gap-5">
         <Aboutme />
         <hr />
-
         <Skills />
         <hr />
         <Projects />
         <hr />
-        <Experience />
+        <Languages />
+        <hr />
+        <Services />
         <hr />
         <Roles />
         <hr />
-        <Languages />
-        <Services />
+        <Experience />
         <hr />
         <Reviews />
         <hr />

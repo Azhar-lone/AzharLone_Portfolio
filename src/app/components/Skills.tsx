@@ -71,6 +71,10 @@ export default function Skills() {
       value: 0,
       text: "Shadcn/ui",
     },
+    {
+      value: 0,
+      text: "Nextjs",
+    },
   ]);
 
   useEffect(() => {
@@ -160,5 +164,9 @@ let progressArray: progressType[] = [
   {
     value: 90,
     text: "Shadcn/ui",
+  },
+  {
+    value: 50,
+    text: "Nextjs",
   },
 ];

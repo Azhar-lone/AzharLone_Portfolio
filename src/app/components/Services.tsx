@@ -1,18 +1,23 @@
 import React from "react";
 
+import { ScrollArea } from "@/components/ui/scroll-area";
+
 const Services = () => {
   return (
     <div className="flex flex-wrap gap-6  py-5 flex-col w-full" id="services">
       <h3 className="text-4xl  p-4 ">Services</h3>
 
-      <div className="flex flex-wrap gap-3 justify-center ">
+      <div className="flex flex-wrap gap-3 md:ml-3 ">
         {services.map((service, index) => (
-          <h1
-            className="text-3xl text-primary p-4 bg-secondary rounded-2xl "
+          <div
             key={index}
+            className="shadow-primary shadow-lg h-48 mt-5  p-2 rounded-2xl border  md:w-[48%]"
           >
-            {service}
-          </h1>
+            <h1 className="text-3xl text-center">{service.title}</h1>
+            <ScrollArea className=" p-2 overflow-y-auto h-[85%]">
+              {service.discription}
+            </ScrollArea>
+          </div>
         ))}
       </div>
     </div>
@@ -21,16 +26,57 @@ const Services = () => {
 
 export default Services;
 
-let services: string[] = [
-  " E-commerce website Developement",
-  "Landing Pages Developement",
-  "E-Learning platform Developement",
-  " Custom Website Developement",
-  "Bloging website Developement",
-  "Business Website Developement",
-  "RESTful API development and/or integration",
-  "Website updates and upgrades",
-  "Telemedicine platforms",
-  "Implementing security best practices",
-];
+interface services {
+  title: string;
+  discription: string;
+}
 
+let services: services[] = [
+  {
+    title: "E-commerce Site Development",
+    discription: `I specialize in developing robust and scalable e-commerce platforms tailored to your business needs.
+     With expertise in both the MERN and T3 stacks, I can create feature-rich online stores that include secure payment gateways,
+      inventory management, user-friendly interfaces, and seamless shopping experiences.`,
+  },
+  {
+    title: "Landing Page Development",
+    discription: `I design and develop high-converting landing pages that capture leads and drive sales.
+     Whether you need a simple, elegant page or a more complex, dynamic one, I ensure that your landing page
+      is responsive, fast, and optimized for SEO.
+
+`,
+  },
+  {
+    title: "Blog Website Development",
+    discription: `I build customizable and easy-to-manage blog websites that allow you to share your thoughts, news,
+     and updates with your audience. Leveraging the MERN and T3 stacks, I create blog platforms that are both visually appealing and functionally robust,
+     with features like user comments, social sharing, and SEO optimization.`,
+  },
+  {
+    title: "social Media site Development",
+    discription: `I can develop social media platforms that connect users, foster communities, 
+    and facilitate engagement. From basic social networking features to advanced functionalities 
+    like real-time messaging and content sharing, I ensure your social media site is scalable,
+     secure, and user-friendly.`,
+  },
+  {
+    title: "Api development and/or integration",
+    discription: `I offer API development and integration services to help your applications
+     communicate seamlessly with each other. Whether you need custom APIs or integration with 
+     third-party services, I ensure that your APIs are secure, efficient, and well-documented.`,
+  },
+  {
+    title: "Custom Web Application Development",
+    discription: `I provide end-to-end development of custom web applications that cater to your specific business requirements.
+     Whether it's a CRM, project management tool, or any other custom solution, I leverage the MERN and T3 stacks to deliver scalable,
+     secure, and high-performance web applications.`,
+  },
+
+  {
+    title: "Full-Stack Application Development",
+    discription: `With expertise in both front-end and back-end development, 
+    I can build full-stack applications that are tailored to your needs. From designing intuitive user 
+    interfaces to implementing complex server-side logic,
+     I ensure a seamless and cohesive application experience.`,
+  },
+];
