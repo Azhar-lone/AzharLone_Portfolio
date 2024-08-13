@@ -11,10 +11,10 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="shadow-primary shadow-lg h-64 mt-5  p-4 rounded-2xl border  md:w-[48%]"
+            className="shadow-primary shadow-lg h-60 mt-5  p-4 rounded-2xl border  md:w-[48%]"
           >
             <h1 className="text-3xl text-center">{service.title}</h1>
-            <ScrollArea className=" p-2 overflow-y-auto h-[85%]">
+            <ScrollArea className=" p-2 overflow-y-auto h-[70%]">
               {service.discription}
             </ScrollArea>
           </div>
