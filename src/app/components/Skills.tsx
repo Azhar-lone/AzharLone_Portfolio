@@ -4,8 +4,24 @@ import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
 
 // icons
-import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs } from "react-icons/fa";
-
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaNodeJs,
+  FaShieldAlt,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiShadcnui,
+  SiPostgresql,
+  SiLinux,
+  SiNextdotjs,
+} from "react-icons/si";
 interface progressType {
   value: number;
   text: string;
@@ -32,6 +48,7 @@ export default function Skills() {
     {
       value: 0,
       text: "TypeScript",
+      Icon: SiTypescript,
     },
     {
       value: 0,
@@ -41,6 +58,7 @@ export default function Skills() {
     {
       value: 0,
       text: "tailwindCss",
+      Icon: SiTailwindcss,
     },
     {
       value: 0,
@@ -50,30 +68,37 @@ export default function Skills() {
     {
       value: 0,
       text: "ExpressJs",
+      Icon: SiExpress,
     },
     {
       value: 0,
       text: "MongoDB",
+      Icon: SiMongodb,
     },
     {
       value: 0,
       text: "Sql",
+      Icon: SiPostgresql,
     },
     {
       value: 0,
       text: "WebSecurity",
+      Icon: FaShieldAlt,
     },
     {
       value: 0,
       text: "Linux",
+      Icon: SiLinux,
     },
     {
       value: 0,
       text: "Shadcn/ui",
+      Icon: SiShadcnui,
     },
     {
       value: 0,
       text: "Nextjs",
+      Icon: SiNextdotjs,
     },
   ]);
 
@@ -96,8 +121,7 @@ export default function Skills() {
           <div className="flex gap-3 items-center flex-col  w-[90%]" key={i}>
             <div className="flex gap-2 items-center">
               <h1 className="text-3xl w-fit">{ele.text}</h1>
-
-              {/* {ele.Icon} */}
+              {ele.Icon && <ele.Icon className="size-10" />}
             </div>
             <Progress
               value={ele.value}
@@ -114,18 +138,22 @@ let progressArray: progressType[] = [
   {
     value: 90,
     text: "Html",
+    Icon: FaHtml5,
   },
   {
     value: 80,
     text: "Css",
+    Icon: FaCss3,
   },
   {
     value: 95,
     text: "JavaScript",
+    Icon: FaJs,
   },
   {
     value: 90,
     text: "TypeScript",
+    Icon: SiTypescript,
   },
   {
     value: 90,
@@ -135,38 +163,47 @@ let progressArray: progressType[] = [
   {
     value: 75,
     text: "tailwindCss",
+    Icon: SiTailwindcss,
   },
 
   {
     value: 80,
     text: "NodeJs",
+    Icon: FaNodeJs,
   },
   {
     value: 100,
     text: "ExpressJs",
+    Icon: SiExpress,
   },
   {
     value: 80,
     text: "MongoDB",
+    Icon: SiMongodb,
   },
   {
     value: 80,
     text: "Sql",
+    Icon: SiPostgresql,
   },
   {
     value: 90,
     text: "WebSecurity",
+    Icon: FaShieldAlt,
   },
   {
     value: 90,
     text: "Linux",
+    Icon: SiLinux,
   },
   {
     value: 90,
     text: "Shadcn/ui",
+    Icon: SiShadcnui,
   },
   {
     value: 50,
     text: "Nextjs",
+    Icon: SiNextdotjs,
   },
 ];

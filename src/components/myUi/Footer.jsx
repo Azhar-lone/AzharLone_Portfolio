@@ -8,8 +8,9 @@ import {
   RiLinkedinFill,
   RiGithubFill,
   RiTwitterXFill,
-  RiGoogleFill,
 } from "react-icons/ri";
+import { MdEmail } from "react-icons/md";
+import { FaUpwork } from "react-icons/fa6";
 
 import Container from "./Container";
 
@@ -61,10 +62,15 @@ const icons = [
   },
   {
     path: "#",
-    name: <RiGoogleFill className="size-10" />,
+    name: <MdEmail className="size-10" />,
   },
   {
     path: "https://www.linkedin.com/in/Azhar-lonem",
     name: <RiLinkedinFill className="size-10  " />,
   },
+  {
+    path: "https://www.upwork.com/freelancers/~01c3b64854d63a958a",
+    name: <FaUpwork className="size-10  " />,
+  },
+
 ];
