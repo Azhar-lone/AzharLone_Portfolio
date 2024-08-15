@@ -3,7 +3,7 @@ import shopOnline from "@/Data/Images/projects/shop-online.png";
 import libraryOnline from "@/Data/Images/projects/library-online.png";
 import portfolio from "@/Data/Images/projects/portfolio.png";
 import shadcnAdmin from "@/Data/Images/projects/shadcn-admin.png";
-
+import shadcnYoutube from "@/Data/Images/projects/shadcn-youtube.png";
 //import Types
 import { projectType } from "@/types/Projects";
 
@@ -47,8 +47,19 @@ export const projectData: projectType[] = [
       "Admin dashboard developed with React,TailwindCss,typeScript,shadcnUi and more... ",
     link: "https://shadcn-admin-topaz.vercel.app/",
     github: "https://github.com/Azhar-lone/Shadcn-admin.git",
-    id: 1,
+    id: 4,
   },
+   {
+    image: shadcnYoutube,
+    category: "React",
+    name: "shadcn-youtube",
+    description:
+      "youtube clone developed with React,TailwindCss,typeScript,shadcnUi and more... ",
+    link: "https://shadcn-youtube.vercel.app/",
+    github: "https://github.com/Azhar-lone/Shadcn-Youtube",
+    id: 5,
+  },
+  
 ];
 
 // let projectsDetailData: projectDetailType[] = [
