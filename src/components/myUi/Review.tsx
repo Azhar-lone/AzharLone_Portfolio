@@ -14,7 +14,7 @@ interface review {
 }
 const Review: React.FC<review> = ({ review }) => {
   return (
-    <div className="flex   flex-col  w-[99%] shadow-xl shadow-foreground rounded">
+    <div className="flex   flex-col  w-[100%] shadow shadow-foreground rounded">
       {/* Owner Info */}
 
       <div className="flex justify-between md:w-[70%] p-3">

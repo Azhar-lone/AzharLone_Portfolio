@@ -109,7 +109,7 @@ export default function Skills() {
 
   return (
     <div
-      className=" transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%]  mx-auto shadow-lg"
+      className=" transition-all flex flex-col gap-5 p-4 rounded-lg shadow-foreground w-[100%]  mx-auto shadow"
       id="skills"
     >
       <h1 className="text-4xl border-b-2 border-foreground w-fit p-4">

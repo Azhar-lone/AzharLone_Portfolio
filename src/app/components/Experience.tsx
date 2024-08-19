@@ -3,7 +3,7 @@ import React from "react";
 const Experience: React.FC = () => {
   return (
     <div
-      className="  w-[100%]  shadow-2xl shadow-primary mx-auto  "
+      className="  w-[100%]  mx-auto  "
       id="projects"
     >
       <h2 className="text-4xl p-4">Experience</h2>

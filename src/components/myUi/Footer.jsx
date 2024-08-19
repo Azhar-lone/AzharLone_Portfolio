@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <Container>
       <div
-        className="relative bottom-0  items-center flex-col flex justify-center gap-4 p-2  border-t-2 border-foreground shadow-2xl shadow-primary mt-5 "
+        className="relative bottom-0  items-center flex-col flex justify-center gap-4 p-2  border-t-2 border-foreground  mt-5 "
         id="contacts"
       >
         <h1 className=" text-2xl text-primary">Developed by Azhar-lone</h1>
