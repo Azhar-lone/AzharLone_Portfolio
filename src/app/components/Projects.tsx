@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
   return (
     <div className="w-full   " id="projects">
       <h2 className="text-4xl p-4">My Projects</h2>
-      <div className="flex gap-2 items-center justify-center border w-fit rounded mx-auto">
+      <div className="flex gap-2 items-center justify-center border w-fit rounded mx-auto bg-background">
         {categories.map((cat, index) => (
           <Button
             variant={selectedCategory === cat ? "secondary" : "ghost"}

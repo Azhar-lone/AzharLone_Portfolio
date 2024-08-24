@@ -1,32 +1,28 @@
-import React from 'react'
-
-
+"use client";
+import React from "react";
+import { usePathname } from "next/navigation";
 interface ContainerProps {
-    children: React.ReactNode;
-    className?: string
-
+  children: React.ReactNode;
+  className?: string;
 }
 
-const Container: React.FC<ContainerProps> = ({
-    children,
-    className
-}) => {
-    return (
+const Container: React.FC<ContainerProps> = ({ children, className }) => {
+  let path = usePathname();
+  return (
+    // due to sidebar on medium screen move container from left 11% and
+    // also make it width 85% to have 5% margin from sidebar
+    // top one is for all
+    // first is for large screen
+    // second is for medium screen
+    // third is for small screen
+    <div
+      className={`mx-auto  ${
+        path === "/" && `lg:w-[70%] lg:ml-auto lg:mx-0`
+      }  w-full ${className}`}
+    >
+      {children}
+    </div>
+  );
+};
 
-        // due to sidebar on medium screen move container from left 11% and 
-        // also make it width 85% to have 5% margin from sidebar
-        // top one is for all
-        // first is for large screen
-        // second is for medium screen
-        // third is for small screen 
-        <div
-            className={`
-           mb-[3vh] mx-auto 
-            lg:w-[70%] lg:ml-auto lg:mx-0
-w-full           ${className}
-            `}
-        >{children}</div>
-    )
-}
-
-export default Container
+export default Container;

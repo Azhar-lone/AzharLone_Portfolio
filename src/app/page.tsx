@@ -10,10 +10,9 @@ import Languages from "./components/Languages";
 import Container from "@/components/myUi/Container";
 export default function Home() {
   return (
-    <div className=" flex flex-col gap-4 w-[100%] mt-5 p-2">
+    <div className=" flex flex-col gap-4 w-[100%]    mt-[11vh]">
       <Introduction />
-      <hr />
-      <Container className="flex flex-col gap-5">
+      <Container className="flex flex-col gap-5 mb-[3vh]">
         <Aboutme />
         <hr />
         <Skills />

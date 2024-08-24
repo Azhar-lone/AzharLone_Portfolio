@@ -1,7 +1,7 @@
 "use client";
 
 // importing dependencies
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 // Icons
 
@@ -9,7 +9,6 @@ import Link from "next/link";
 
 //My components
 import { ModeToggle } from "./dark-mode";
-import Container from "./Container";
 let NavItems = [
   {
     text: "Projects",
@@ -30,20 +29,29 @@ let NavItems = [
 ];
 
 const Nav: React.FC = () => {
+  const [hash, setHash] = useState<string>(window.location.hash);
+
   return (
-    <Container>
-      <div
-        className={` mx-auto w-fit shadow-2xl shadow-secondary-foreground p-4 rounded-b-2xl flex items-center gap-4 `}
-      >
-        <ModeToggle />
-        {NavItems.map((item, index) => (
-          <Link href={item.href} key={index}>
-            {" "}
-            {item.text}
-          </Link>
-        ))}
-      </div>
-    </Container>
+    <div
+      className={` mx-auto sticky bg-background justify-center top-0 shadow shadow-secondary-foreground h-[10vh]  flex items-center gap-4 w-full z-50`}
+    >
+      <ModeToggle />
+      {NavItems.map((item, index) => (
+        <Link
+          onClick={() => setHash(item.href)}
+          href={item.href}
+          key={index}
+          className={
+            hash === item.href
+              ? "text-foreground "
+              : "text-foreground/60 hover:text-foreground"
+          }
+        >
+          {" "}
+          {item.text}
+        </Link>
+      ))}
+    </div>
   );
 };
 
