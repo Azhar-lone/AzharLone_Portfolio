@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { Link2Icon } from "lucide-react";
@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 
 // components
 import { ScrollArea } from "../ui/scroll-area";
-
 //import Types
 import { projectType } from "@/types/Projects";
 
@@ -20,7 +19,7 @@ const ProjectCard: React.FC<propsType> = ({ project }) => {
   let router = useRouter();
 
   return (
-    <div className="h-96 mt-5 border rounded-2xl  shadow-2xl  shadow-primary  md:w-[48%] md:ml-1 group relative">
+    <div className="h-96 mt-5 border rounded-2xl  shadow-2xl  shadow-primary md:ml-1 group w-96 relative">
       <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5 ">
         {project.category}
       </Badge>
@@ -30,7 +29,7 @@ const ProjectCard: React.FC<propsType> = ({ project }) => {
         src={project.image}
         alt=""
         priority
-        onClick={()=>router.push("/projects/"+project.id)}
+        onClick={() => router.push("/projects/" + project.id)}
       />
 
       <div className="flex top-[40%] left-[35%] absolute">

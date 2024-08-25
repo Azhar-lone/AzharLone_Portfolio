@@ -28,9 +28,9 @@ const Projects: React.FC = () => {
   }
 
   return (
-    <div className="w-full   " id="projects">
+    <div className="w-full " id="projects">
       <h2 className="text-4xl p-4">My Projects</h2>
-      <div className="flex gap-2 items-center justify-center border w-fit rounded mx-auto bg-background">
+      <div className="flex   gap-2 items-center justify-center border w-fit rounded mx-auto bg-background">
         {categories.map((cat, index) => (
           <Button
             variant={selectedCategory === cat ? "secondary" : "ghost"}
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
           </Button>
         ))}
       </div>
-      <div className="flex  gap-5 flex-wrap  flex-row ">
+      <div className="flex  gap-5 flex-wrap  flex-row  mx-auto w-[90%]">
         {filteredProjects.map((project: projectType, index: number) => {
           return <ProjectCard project={project} key={index} />;
         })}

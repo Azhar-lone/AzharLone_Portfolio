@@ -16,7 +16,8 @@ import Container from "./Container";
 
 const Footer = () => {
   return (
-    <Container className="relative bottom-0 bg-background justify-center items-center flex flex-col gap-4 p-2  border-t-2">
+    <Container className="relative bottom-0 bg-background justify-center items-center flex flex-col gap-4 p-2  border-t-2 border-foreground">
+      <hr />
       <h1 className=" text-2xl text-primary">Developed by Azhar-lone</h1>
       <div className="flex items-center justify-center border-2 w-full gap-10">
         <div className="   flex item-center flex-col   " id="contacts">
