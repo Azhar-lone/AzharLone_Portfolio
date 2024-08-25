@@ -33,7 +33,7 @@ const Nav: React.FC = () => {
 
   return (
     <div
-      className={` mx-auto sticky bg-background justify-center top-0 shadow shadow-secondary-foreground h-[10vh]  flex items-center gap-4 w-full z-50`}
+      className={` mx-auto sticky  justify-center top-0 shadow border-b h-[10vh] backdrop-blur flex items-center gap-4 w-full z-50`}
     >
       <ModeToggle />
       {NavItems.map((item, index) => (
@@ -44,7 +44,7 @@ const Nav: React.FC = () => {
           className={
             hash === item.href
               ? "text-foreground "
-              : "text-foreground/60 hover:text-foreground"
+              : "text-foreground/60 hover:text-foreground "
           }
         >
           {" "}

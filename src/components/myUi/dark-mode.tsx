@@ -15,8 +15,8 @@ export function ModeToggle() {
             onClick={() => setTheme(mtheme.text)}
             className={
               mtheme.text !== theme
-                ? "text-foreground/50 hover:text-foreground scale-75"
-                : "text-foreground  scale-100 "
+                ? " hover:opacity-100 scale-75 opacity-50"
+                : "  scale-100 transition-opacity duration-1000 "
             }
           />
         </Hint>

@@ -25,14 +25,10 @@ const Footer = () => {
           <div className="flex gap-2 ">
             {icons.map((icon, index) => {
               return (
-                <Link
-                  href={icon.path}
-                  key={index}
-                  target="_blank"
-                >
-                  <div className={`p-2 flex flex-col`}>
+                <Link href={icon.path} key={index} target="_blank">
+                  <div className={`p-2 flex flex-col items-center`}>
                     <icon.name className="md:size-10 size-5" />
-                    <h1 className="">{icon.text}</h1>
+                    <h1>{icon.text}</h1>
                   </div>
                 </Link>
               );
