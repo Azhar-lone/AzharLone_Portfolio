@@ -11,19 +11,14 @@ export interface projectType {
   id: number;
 }
 
+export interface CardType {
+  Icon: IconType;
+  name: string;
+  description?: string;
+  link?: string;
+}
+
 export interface projectDetailType extends projectType {
-  features: [
-    {
-      icon: IconType;
-      name: string;
-      description: string;
-    }
-  ];
-  Stack: [
-    {
-      icon: IconType;
-      name: string;
-      link: string;
-    }
-  ];
+  features: CardType[];
+  Stack: CardType[];
 }

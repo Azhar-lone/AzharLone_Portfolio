@@ -65,16 +65,16 @@ const Nav: React.FC = () => {
       className={` mx-auto sticky   top-0 shadow border-b h-[10vh] backdrop-blur  w-full z-50 flex items-center  justify-center`}
     >
       <NavigationMenu>
-        <ModeToggle />
-
         <NavigationMenuList className="flex md:gap-5 gap-2">
+          <ModeToggle />
           {NavItems.map((item, index) => (
             <NavigationMenuItem>
               <NavigationMenuLink
                 href={item.href}
                 key={index}
                 className={
-                  path === item.href
+                  path === item.href ||
+                  (path.includes(item.href) && item.href !== "/")
                     ? "opacity-100 "
                     : "opacity-70 hover:opacity-100"
                 }

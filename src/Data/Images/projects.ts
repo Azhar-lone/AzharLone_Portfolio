@@ -4,8 +4,12 @@ import libraryOnline from "@/Data/Images/projects/library-online.png";
 import portfolio from "@/Data/Images/projects/portfolio.png";
 import shadcnAdmin from "@/Data/Images/projects/shadcn-admin.png";
 import shadcnYoutube from "@/Data/Images/projects/shadcn-youtube.png";
+
+// Icons
+import { FaReact, FaUserFriends } from "react-icons/fa";
+
 //import Types
-import { projectType } from "@/types/Projects";
+import { projectType, projectDetailType } from "@/types/Projects";
 
 export const projectData: projectType[] = [
   {
@@ -49,7 +53,7 @@ export const projectData: projectType[] = [
     github: "https://github.com/Azhar-lone/Shadcn-admin.git",
     id: 4,
   },
-   {
+  {
     image: shadcnYoutube,
     category: "React",
     name: "shadcn-youtube",
@@ -59,28 +63,36 @@ export const projectData: projectType[] = [
     github: "https://github.com/Azhar-lone/Shadcn-Youtube",
     id: 5,
   },
-  
 ];
 
-// let projectsDetailData: projectDetailType[] = [
-//   {
-//     image: shopOnline,
-//     category: "Mern Stack",
-//     name: "shope-Online ",
-//     description:
-//       "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
-//     link: "",
-//     github: "https://github.com/Azhar-lone/shop-online.git",
-//     id: 1,
-//     features:[{
-//       description:"",
-//       icon:,
-//       name:"authentication"
-//     }],
-//     Stack:[{
+export let projectsDetailData: projectDetailType[] = [
+  {
+    image: shopOnline,
+    category: "Mern Stack",
+    name: "shope-Online ",
+    description:
+      "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
+    link: "",
+    github: "https://github.com/Azhar-lone/shop-online.git",
+    id: 1,
+    features: [
+      {
+        description:
+          "Complete User Functionalities Including Authentication and Autherization",
+        Icon: FaUserFriends,
+        name: "User Management",
+      },
 
-//     }]
-//   },
-// ];
+      
+    ],
+    Stack: [
+      {
+        name: "ReactJs",
+        Icon: FaReact,
+        link: "#",
+      },
+    ],
+  },
+];
 
 export let categories: string[] = ["All", "MERN", "NextJs", "React"];
