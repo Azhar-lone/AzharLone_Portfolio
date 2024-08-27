@@ -35,19 +35,13 @@ const Review: React.FC<review> = ({ review }) => {
             {Array(5)
               .fill(0)
               .map((_, i: number) => (
-                <>
+                <div key={i}>
                   {review.rating && review.rating - 0.5 > i ? (
-                    <AiFillStar
-                      className="text-yellow-500 size-5 md:size-10"
-                      key={i}
-                    />
+                    <AiFillStar className="text-yellow-500 size-5 md:size-10" />
                   ) : (
-                    <AiFillStar
-                      key={i}
-                      className="text-secondary  size-5 md:size-10 shadow-2xl"
-                    />
+                    <AiFillStar className="text-secondary  size-5 md:size-10 shadow-2xl" />
                   )}
-                </>
+                </div>
               ))}
           </div>
         )}

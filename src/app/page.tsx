@@ -1,3 +1,4 @@
+"use client"
 import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";

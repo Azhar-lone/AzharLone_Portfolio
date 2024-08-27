@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
+
 interface ContainerProps {
   children: React.ReactNode;
   className?: string;
@@ -17,7 +18,7 @@ const Container: React.FC<ContainerProps> = ({ children, className }) => {
     // third is for small screen
     <div
       className={`mx-auto  ${
-        path === "/" && `lg:w-[70%] lg:ml-auto lg:mx-0`
+        path === "/" && `lg:w-[68%] lg:ml-[30%] lg:mx-0`
       }  w-full ${className}`}
     >
       {children}

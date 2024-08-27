@@ -54,7 +54,7 @@ let NavItems = [
   },
   {
     text: "Blogs",
-    href: "/blogs",
+    href: "#",
   },
 ];
 
@@ -68,7 +68,7 @@ const Nav: React.FC = () => {
         <NavigationMenuList className="flex md:gap-5 gap-2">
           <ModeToggle />
           {NavItems.map((item, index) => (
-            <NavigationMenuItem>
+            <NavigationMenuItem key={index}>
               <NavigationMenuLink
                 href={item.href}
                 key={index}
