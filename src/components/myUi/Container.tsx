@@ -10,12 +10,10 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps> = ({ children, className }) => {
   let path = usePathname();
   return (
-    // due to sidebar on medium screen move container from left 11% and
-    // also make it width 85% to have 5% margin from sidebar
+    // due to sidebar on medium screen, move container from left 11% and
+    // also make its width 85% to have 5% margin from sidebar
     // top one is for all
-    // first is for large screen
-    // second is for medium screen
-    // third is for small screen
+   
     <div
       className={`mx-auto  ${
         path === "/" && `lg:w-[68%] lg:ml-[30%] lg:mx-0`

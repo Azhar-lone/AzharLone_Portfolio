@@ -13,15 +13,15 @@ import AzharLone from "@/Data/Images/AzharLone.jpg";
 // Components
 const Introduction: React.FC = () => {
   return (
-    <div className="  transition-all flex flex-col  lg:items-start items-center p-2 rounded-lg w-[100%]  mx-auto lg:mx-0  lg:w-[30%] lg:left-0 lg:fixed lg:top-[10vh] h-full  lg:bg-secondary lg-h-[90vh]">
-      <ScrollArea className="overflow-y-auto w-full ">
+    <div className="  transition-all flex flex-col  lg:items-start items-center p-2 rounded-lg w-[98%] mx-auto lg:mx-0  lg:w-[30%] lg:left-0 lg:fixed lg:top-[10vh] h-full  lg:bg-secondary lg:h-[89vh]">
+      <ScrollArea className="overflow-y-auto w-full">
         <div className="  gap-2 flex flex-col   items-center">
           {/* image */}
 
           <Image
             src={AzharLone}
             alt="Img"
-            className="  h-72 w-full rounded   "
+            className="  h-96 w-full rounded   "
           />
           {/* Introduction text section */}
           <div className="flex flex-col  w-full gap-4">

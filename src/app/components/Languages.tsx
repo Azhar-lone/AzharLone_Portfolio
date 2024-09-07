@@ -7,7 +7,7 @@ const Languages = () => {
 
       <div className="flex flex-wrap gap-3 justify-start">
         {languages.map((lang, index) => (
-          <h1 className="text-3xl p-4 bg-secondary rounded-2xl " key={index}>
+          <h1 className="text-xl lg:text-3xl p-4 bg-secondary rounded-2xl " key={index}>
             {lang}
           </h1>
         ))}

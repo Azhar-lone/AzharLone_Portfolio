@@ -6,7 +6,7 @@ const Roles = () => {
       <h2 className="text-4xl p-4">What Can i Do?</h2>
 
       {role.map((value, index) => (
-        <h1 className="text-3xl p-4 bg-secondary rounded-2xl " key={index}>
+        <h1 className="lg:text-3xl text-xl p-4 bg-secondary rounded-2xl " key={index}>
           {index + 1}-{value}
         </h1>
       ))}
