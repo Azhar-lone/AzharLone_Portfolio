@@ -4,17 +4,18 @@ import "@/styles/globals.css";
 
 // components
 import Nav from "@/components/myUi/Nav";
-import Footer from "@/components/myUi/Footer"
+import Footer from "@/components/myUi/Footer";
 
 // context
-import { ThemeProvider } from "@/components/context/theme-provider"
+import { ThemeProvider } from "@/components/context/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
 export const metadata: Metadata = {
-  title: "Azhar Lone|Portfolio",
+  title: {
+    default: "Azhar Lone|Portfolio",
+    template: "%s|Azhar Lone",
+  },
   description: "portfolio website of developer Azhar lone",
 };
 
@@ -40,4 +41,3 @@ export default function RootLayout({
     </html>
   );
 }
-

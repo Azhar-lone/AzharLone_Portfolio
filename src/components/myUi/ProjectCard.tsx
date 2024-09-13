@@ -19,7 +19,7 @@ const ProjectCard: React.FC<propsType> = ({ project }) => {
   let router = useRouter();
 
   return (
-    <div className="h-96 mt-5 border rounded-2xl  shadow-2xl  shadow-primary md:ml-1 group w-96 relative">
+    <div className="h-96 mt-5 border rounded-2xl  shadow-2xl  shadow-primary md:ml-1 group w-96 relative  transition-opacity">
       <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5 ">
         {project.category}
       </Badge>

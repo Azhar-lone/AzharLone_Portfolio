@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -13,16 +12,12 @@ import AzharLone from "@/Data/Images/AzharLone.jpg";
 // Components
 const Introduction: React.FC = () => {
   return (
-    <div className="  transition-all flex flex-col  lg:items-start items-center p-2 rounded-lg w-[98%] mx-auto lg:mx-0  lg:w-[30%] lg:left-0 lg:fixed lg:top-[10vh] h-full  lg:bg-secondary lg:h-[89vh]">
+    <div className="  transition-all flex flex-col  lg:items-start items-center p-2 rounded-lg w-[98%] mx-auto lg:mx-0  lg:w-[30%] lg:left-0 lg:fixed lg:top-[10vh] h-full  lg:shadow-2xl shadow-foreground lg:h-[89vh]">
       <ScrollArea className="overflow-y-auto w-full">
         <div className="  gap-2 flex flex-col   items-center">
           {/* image */}
 
-          <Image
-            src={AzharLone}
-            alt="Img"
-            className="  h-96 w-full rounded   "
-          />
+          <Image src={AzharLone} alt="Img" height={2548} width={1640 } />
           {/* Introduction text section */}
           <div className="flex flex-col  w-full gap-4">
             <h1 className="text-primary text-4xl border-b-2 h-fit w-fit border-primary ">
@@ -40,17 +35,17 @@ const Introduction: React.FC = () => {
           <div className="flex gap-2 ">
             <a href="https://github.com/Azhar-lone" target="_blank">
               {" "}
-              <RiGithubFill className="size-10  md:bg-background bg-secondary p-2 hover:bg-secondary/50 rounded border md:hover:bg-background/50" />
+              <RiGithubFill className="size-10   bg-secondary p-2 hover:bg-secondary/50 rounded border " />
             </a>
             <a href="https://www.linkedin.com/in/Azhar-lonem" target="_blank">
               {" "}
-              <RiLinkedinFill className="size-10  md:bg-background bg-secondary p-2 hover:bg-secondary/50 rounded border md:hover:bg-background/50 " />
+              <RiLinkedinFill className="size-10  bg-secondary p-2 hover:bg-secondary/50 rounded border  " />
             </a>
           </div>
           <a
             href="/AzharResume.pdf"
             download={"AzharLone_CV.pdf"}
-            className="flex gap-1 animate-bounce md:bg-background bg-secondary p-2 hover:bg-secondary/50 rounded border md:hover:bg-background/50 "
+            className="flex gap-1 animate-bounce bg-secondary p-2 hover:bg-secondary/50 rounded border  "
           >
             Download CV
             <Download />
