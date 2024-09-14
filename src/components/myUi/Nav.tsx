@@ -62,7 +62,7 @@ const Nav: React.FC = () => {
   let path = usePathname();
   return (
     <div
-      className={` mx-auto sticky   top-0 shadow border-b h-[10vh] backdrop-blur  w-full z-50 flex items-center  justify-center`}
+      className={` mx-auto sticky   top-0 shadow border-b h-[10vh] backdrop-blur w-full   z-50 flex items-center  justify-center`}
     >
       <NavigationMenu>
         <NavigationMenuList className="flex md:gap-5 gap-2">

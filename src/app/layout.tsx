@@ -14,9 +14,22 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
     default: "Azhar Lone|Portfolio",
-    template: "%s|Azhar Lone",
+    template: "%s | Azhar Lone",
   },
   description: "portfolio website of developer Azhar lone",
+  keywords: [
+    "Azhar",
+    "Azhar Lone",
+    "Azhar Lone developer",
+    "Nextjs",
+    "MERN Stack",
+    "Azhar Developer",
+    "azhar lone developer",
+    "azhar lone portfolio",
+  ],
+  authors: [{ name: "Azhar Lone", url: "https://azhar-lone-portfolio.vercel.app/" }],
+  publisher:"vercel",
+
 };
 
 export default function RootLayout({
