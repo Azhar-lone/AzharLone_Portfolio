@@ -9,14 +9,22 @@ type themeType = {
   icon: LucideIcon;
   text: string;
 };
+
 const themes: themeType[] = [
   { text: "light", icon: Sun },
   { text: "system", icon: PcCaseIcon },
   { text: "dark", icon: Moon },
 ];
+
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
-  
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // Render nothing until the component is mounted
 
   return (
     <div className="flex p-1 gap-1 border ">
