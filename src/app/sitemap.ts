@@ -1,15 +1,16 @@
-import type { MetadataRoute } from 'next'
- 
+import type { MetadataRoute } from "next";
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const currentDate = new Date().toISOString(); // Ensure ISO format
+const siteUrl=  "https://azhar-lone-portfolio.vercel.app"
   return [
     {
-      url: 'https://azhar-lone-portfolio.vercel.app/',
-      lastModified: new Date(),
+      url: process.env.SITE_URL || siteUrl,
+      lastModified: currentDate,
     },
     {
-      url: 'https://azhar-lone-portfolio.vercel.app/projects',
-      lastModified: new Date(),
+      url: process.env.SITE_URL || siteUrl,
+      lastModified: currentDate,
     },
-   
-  ]
+  ];
 }

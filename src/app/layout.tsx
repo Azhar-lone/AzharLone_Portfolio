@@ -10,9 +10,10 @@ import Footer from "@/components/myUi/Footer";
 import { ThemeProvider } from "@/components/context/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteUrl = "https://azhar-lone-portfolio.vercel.app";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://azhar-lone-portfolio.vercel.app/'),
+  metadataBase: new URL(process.env.SITE_URL || siteUrl),
   title: {
     default: "Azhar Lone|Portfolio",
     template: "%s | Azhar Lone",
@@ -29,7 +30,10 @@ export const metadata: Metadata = {
     "azhar lone portfolio",
   ],
   authors: [
-    { name: "Azhar Lone", url: "https://azhar-lone-portfolio.vercel.app/" },
+    {
+      name: "Azhar Lone",
+      url: process.env.SITE_URL || siteUrl,
+    },
   ],
   publisher: "vercel",
   openGraph: {
@@ -43,7 +47,7 @@ export const metadata: Metadata = {
     description: "portfolio website of developer Azhar lone",
     card: "summary_large_image",
     creator: "Azhar Lone",
-    site: "https://azhar-lone-portfolio.vercel.app/",
+    site: process.env.SITE_URL || siteUrl,
     images: "/og-image.png",
   },
 };
