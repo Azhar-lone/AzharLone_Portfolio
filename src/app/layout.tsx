@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   publisher: "vercel",
   openGraph: {
-    images: "/og-image.png",
+    images: "/og-image.jpg",
   },
   twitter: {
     title: {
