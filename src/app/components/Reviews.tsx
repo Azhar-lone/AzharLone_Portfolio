@@ -4,7 +4,7 @@ import Review from "@/components/myUi/Review";
 
 import reviewType from "@/types/Review";
 const Reviews: React.FC = () => {
-  return (
+  return !reviews.length ? null : (
     <div className="flex flex-wrap gap-6  py-5 flex-col w-full" id="reviews">
       <h3 className="text-4xl  p-4 ">Reviews</h3>
 
@@ -20,24 +20,24 @@ const Reviews: React.FC = () => {
 export default Reviews;
 
 let reviews: reviewType[] = [
-  {
-    date: new Date(),
-    owner: {
-      name: "John Doe",
-      profilePic: "",
-      userName: "john-doe",
-    },
-    review: ` Review 1           `,
-    rating: 4,
-  },
-  {
-    date: new Date(),
-    owner: {
-      name: "Some one",
-      profilePic: "",
-      userName: "some-one",
-    },
-    review: `Review 2`,
-    rating: 5,
-  },
+  // {
+  // date: new Date(),
+  //   owner: {
+  //     name: "John Doe",
+  //     profilePic: "",
+  //     userName: "john-doe",
+  //   },
+  //   review: ` Review 1           `,
+  //   rating: 4,
+  // },
+  // {
+  //   date: new Date(),
+  //   owner: {
+  //     name: "Some one",
+  //     profilePic: "",
+  //     userName: "some-one",
+  //   },
+  //   review: `Review 2`,
+  //   rating: 5,
+  // },
 ];

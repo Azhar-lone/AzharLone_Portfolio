@@ -70,9 +70,9 @@ const icons = [
     name: RiLinkedinFill,
     text: "linkedIn",
   },
-  {
-    path: "https://www.upwork.com/freelancers/~01c3b64854d63a958a",
-    name: FaUpwork,
-    text: "upwork",
-  },
+  // {
+  //   path: "https://www.upwork.com/freelancers/~01c3b64854d63a958a",
+  //   name: FaUpwork,
+  //   text: "upwork",
+  // },
 ];
