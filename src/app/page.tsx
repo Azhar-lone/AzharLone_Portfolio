@@ -2,7 +2,6 @@ import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Reviews from "./components/Reviews";
-import Experience from "./components/Experience";
 import Roles from "./components/Roles";
 import Aboutme from "./components/About";
 import Services from "./components/Services";
@@ -36,8 +35,6 @@ export default function Home() {
         <Services />
         <hr />
         <Roles />
-        <hr />
-        <Experience />
         <hr />
         <Reviews />
         <hr />

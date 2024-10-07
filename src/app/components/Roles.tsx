@@ -20,4 +20,5 @@ let role: string[] = [
   "Full-Stack Development (MERN stack)",
   "Back-End Development",
   "Front-End Development",
+  "CLI Tools Development",
 ];
