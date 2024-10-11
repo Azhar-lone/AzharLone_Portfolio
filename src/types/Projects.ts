@@ -8,11 +8,10 @@ export interface projectType {
   description: string;
   link: string;
   github: string;
-  id: number;
 }
 
 export interface CardType {
-  Icon: IconType;
+  Icon?: IconType;
   name: string;
   description?: string;
   link?: string;

@@ -7,7 +7,7 @@ import Nav from "@/components/myUi/Nav";
 import Footer from "@/components/myUi/Footer";
 
 // context
-import { ThemeProvider } from "@/components/context/theme-provider";
+import { ThemeProvider } from "@/hooks/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteUrl = "https://azhar-lone-portfolio.vercel.app";

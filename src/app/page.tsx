@@ -7,17 +7,6 @@ import Aboutme from "./components/About";
 import Services from "./components/Services";
 import Languages from "./components/Languages";
 import Container from "@/components/myUi/Container";
-import type { Metadata } from "next";
-const siteUrl = "https://azhar-lone-portfolio.vercel.app";
-export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || siteUrl),
-  title: {
-    template: "%s | Azhar Lone",
-    absolute: "Azhar Lone",
-  },
-  description: "Home Page of portfolio website of developer Azhar lone",
-  keywords: ["Azhar Lone"],
-};
 
 export default function Home() {
   return (

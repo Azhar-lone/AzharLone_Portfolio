@@ -37,6 +37,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="flex gap-5">
+        <h1> azharlonem@gmail.com</h1> <h1> +923555812744</h1>
+      </div>
       <h1 className="text-muted">2024 copyrights @Azhar-lone</h1>
     </Container>
   );
@@ -54,7 +57,7 @@ const icons = [
   {
     path: "https://github.com/Azhar-lone",
     name: RiGithubFill,
-    text: "github",
+    text: "Github",
   },
   // {
   //   path: "#",
@@ -68,7 +71,7 @@ const icons = [
   {
     path: "https://www.linkedin.com/in/Azhar-lonem",
     name: RiLinkedinFill,
-    text: "linkedIn",
+    text: "LinkedIn",
   },
   // {
   //   path: "https://www.upwork.com/freelancers/~01c3b64854d63a958a",

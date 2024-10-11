@@ -7,7 +7,7 @@ import { RiGithubFill } from "react-icons/ri";
 import { useRouter } from "next/navigation";
 
 // components
-import { ScrollArea } from "../ui/scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 //import Types
 import { projectType } from "@/types/Projects";
 
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<propsType> = ({ project }) => {
         src={project.image}
         alt=""
         priority
-        onClick={() => router.push("/projects/" + project.id)}
+        onClick={() => router.push("/projects/" + project.name.toLowerCase())}
       />
 
       <div className="flex top-[40%] left-[35%] absolute">

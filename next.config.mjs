@@ -11,7 +11,7 @@ const nextConfig = {
 
   // Additional configurations (e.g., environment variables)
   env: {
-    SITE_URL: "https://azhar-lone-portfolio.vercel.app", // Your site's URL for dynamic use (e.g., in sitemap)
+    SITE_URL: "https://azhar-lone-portfolio.vercel.app", 
   },
 };
 

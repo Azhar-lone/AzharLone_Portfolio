@@ -17,7 +17,8 @@ const Roles = () => {
 export default Roles;
 
 let role: string[] = [
-  "Full-Stack Development (MERN stack)",
+  "MERN Stack Development",
+  "T3 Stack Development",
   "Back-End Development",
   "Front-End Development",
   "CLI Tools Development",

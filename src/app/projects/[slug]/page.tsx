@@ -1,34 +1,80 @@
 import React from "react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { projectsDetailData } from "@/Data/Images/projects";
-
 // components
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Container from "@/components/myUi/Container";
 // Types
 import { CardType } from "@/types/Projects";
+import type { Metadata } from "next";
 
-export default function Home() {
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+const getProjectBySlug = (slug: string) => {
+  return projectsDetailData.find(
+    (project) => project.name.toLowerCase() === slug
+  );
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const project = getProjectBySlug(params.slug);
+
+  if (project) {
+    return {
+      title: `${project.name}`,
+      description: `Details about the project: ${project.name}`,
+      keywords: [`${project.name} project`, "Azhar Lone projects"],
+      authors: [
+        { name: "Azhar Lone", url: "https://azhar-lone-portfolio.vercel.app/" },
+      ],
+      publisher: "vercel",
+    };
+  }
+
+  return {
+    title: "Project Not Found",
+    description: "No project found for the specified slug.",
+    keywords: ["Project not found", "Azhar Lone projects"],
+    authors: [
+      { name: "Azhar Lone", url: "https://azhar-lone-portfolio.vercel.app/" },
+    ],
+    publisher: "vercel",
+  };
+}
+
+export default function ProjectDetails({ params }: Props) {
+  const project = getProjectBySlug(params.slug);
+
+  if (!project) {
+    return notFound();
+  }
+
   return (
     <Container className="flex flex-col gap-4 p-4">
       <section className="flex flex-col gap-4 justify-center w-full items-center p-4 border shadow">
-        <h2 className="text-4xl">{projectsDetailData[0].name}</h2>
-        <div className="flex gap-2">
+        <h2 className="text-4xl">{project.name}</h2>
+        <div className="flex gap-2 text-xl">
           <Link
             target="_blank"
             className="text-blue-500 hover:text-blue-400"
-            href={projectsDetailData[0].link}
+            href={project.link}
           >
-            Visit 
+            Visit
           </Link>
-          <h1>
-            Source code on 
+
+          <h1 className="flex gap-2">
+            Source code on
             <Link
               target="_blank"
               className="text-blue-500 hover:text-blue-400"
-              href={projectsDetailData[0].github}
+              href={project.github}
             >
-               github
+              Github
             </Link>
           </h1>
         </div>
@@ -36,8 +82,8 @@ export default function Home() {
 
       <section className="flex flex-col gap-4 justify-center w-full items-center p-4 border shadow">
         <h2 className="text-4xl">Stack</h2>
-        <div className="flex">
-          {projectsDetailData[0].Stack.map((st, index) => (
+        <div className="flex flex-wrap gap-4 justify-center">
+          {project.Stack.map((st, index) => (
             <Card CardProp={st} key={index} />
           ))}
         </div>
@@ -45,8 +91,8 @@ export default function Home() {
 
       <section className="flex flex-col gap-4 justify-center w-full items-center p-4 border shadow">
         <h2 className="text-4xl ">Features</h2>
-        <div className="flex gap-5">
-          {projectsDetailData[0].features.map((ft, index) => (
+        <div className="flex gap-5 flex-wrap">
+          {project.features.map((ft, index) => (
             <Card CardProp={ft} key={index} />
           ))}
         </div>
@@ -59,13 +105,11 @@ const Card: React.FC<{ CardProp: CardType }> = ({ CardProp }) => {
   return (
     <div
       className={`${
-        !CardProp.description
-          ? `${!CardProp.link ? "h-20" : "w-72 h-32"}  `
-          : "w-96 h-60"
+        !CardProp.description ? "w-72 h-32" : "w-96 h-40"
       }  flex flex-col p-2 border shadow items-center rounded`}
     >
       <h2 className="text-xl p-4 flex gap-2 items-center">
-        {CardProp.name} <CardProp.Icon className="size-10" />{" "}
+        {CardProp.name} {CardProp.Icon && <CardProp.Icon className="size-10" />}
       </h2>
 
       {CardProp.link && (
@@ -78,7 +122,7 @@ const Card: React.FC<{ CardProp: CardType }> = ({ CardProp }) => {
           >
             {CardProp.name}
           </Link>{" "}
-          official site{" "}
+          official site
         </h1>
       )}
       {CardProp.description && (

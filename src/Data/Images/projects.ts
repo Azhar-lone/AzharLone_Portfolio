@@ -6,8 +6,21 @@ import shadcnAdmin from "@/Data/Images/projects/shadcn-admin.png";
 import shadcnYoutube from "@/Data/Images/projects/shadcn-youtube.png";
 
 // Icons
-import { FaReact, FaUserFriends } from "react-icons/fa";
+// icons
+import {
+  FaReact,
+  FaBook,
+  FaUserFriends,
+  FaProductHunt,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiShadcnui,
 
+} from "react-icons/si";
 //import Types
 import { projectType, projectDetailType } from "@/types/Projects";
 
@@ -15,12 +28,11 @@ export const projectData: projectType[] = [
   {
     image: shopOnline,
     category: "MERN",
-    name: "shope-Online ",
+    name: "shope-Online",
     description:
       "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
     link: "https://shop-online-static.netlify.app/",
     github: "https://github.com/Azhar-lone/shop-online.git",
-    id: 1,
   },
 
   {
@@ -31,7 +43,6 @@ export const projectData: projectType[] = [
       "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss, and more ",
     link: "#",
     github: "https://github.com/Azhar-lone/library-Online.git",
-    id: 2,
   },
   {
     image: portfolio,
@@ -41,7 +52,6 @@ export const projectData: projectType[] = [
       "Portflio site developed with nextJs,shadCn/ui,Framer-Motion and typeScript,static initially ",
     link: "https://azhar-lone-portfolio.vercel.app/",
     github: "https://github.com/Azhar-lone/AzharLone_Portfolio.git ",
-    id: 3,
   },
   {
     image: shadcnAdmin,
@@ -51,7 +61,6 @@ export const projectData: projectType[] = [
       "Admin dashboard developed with React,TailwindCss,typeScript,shadcnUi and more... ",
     link: "https://shadcn-admin-topaz.vercel.app/",
     github: "https://github.com/Azhar-lone/Shadcn-admin.git",
-    id: 4,
   },
   {
     image: shadcnYoutube,
@@ -61,20 +70,20 @@ export const projectData: projectType[] = [
       "youtube clone developed with React,TailwindCss,typeScript,shadcnUi and more... ",
     link: "https://shadcn-youtube.vercel.app/",
     github: "https://github.com/Azhar-lone/Shadcn-Youtube",
-    id: 5,
   },
 ];
+
+export let categories: string[] = ["All", "MERN", "NextJs", "React"];
 
 export let projectsDetailData: projectDetailType[] = [
   {
     image: shopOnline,
     category: "Mern Stack",
-    name: "shope-Online ",
+    name: "shope-Online",
     description:
       "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
     link: "",
     github: "https://github.com/Azhar-lone/shop-online.git",
-    id: 1,
     features: [
       {
         description:
@@ -82,8 +91,26 @@ export let projectsDetailData: projectDetailType[] = [
         Icon: FaUserFriends,
         name: "User Management",
       },
+      {
+        description:
+          "Users with different auherization can upload,update,delete,buy or sell products",
+        Icon: FaProductHunt,
+        name: "Products Management",
+      },
+      {
+        description: "dashboard for admin.",
+        name: "Admin DashBoard",
+      },
+      {
+        description: "responsive for different screen sizes",
+        name: "Responsive Design",
+      },
+      {
+        description: "users can provide reviews and rate products",
+        name: "Reviews and Ratings ",
+      },
 
-      
+
     ],
     Stack: [
       {
@@ -91,8 +118,95 @@ export let projectsDetailData: projectDetailType[] = [
         Icon: FaReact,
         link: "#",
       },
+      {
+        Icon: SiTailwindcss,
+        name: "TailwindCss",
+        link: "#",
+      },
+      {
+        Icon: SiTypescript,
+        name: "TypesScript",
+        link: "#",
+      },
+      {
+        Icon: SiExpress,
+        name: "ExpressJs",
+        link: "#",
+      },
+      {
+        Icon: SiMongodb,
+        name: "MongoDB",
+        link: "#",
+      },
+      {
+        Icon: SiShadcnui,
+        name: "Shadcn/ui",
+        link: "#",
+      },
     ],
   },
-];
 
-export let categories: string[] = ["All", "MERN", "NextJs", "React"];
+  {
+    image: libraryOnline,
+    category: "MERN",
+    name: "Library-Online ",
+    description:
+      "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss, and more ",
+    link: "#",
+    github: "https://github.com/Azhar-lone/library-Online.git",
+    features: [
+      {
+        description:
+          "Complete User Functionalities Including Authentication and Autherization",
+        Icon: FaUserFriends,
+        name: "User Management",
+      },
+      {
+        description:
+          "Users with different auherization can upload,update, download,or delete Books",
+        Icon: FaBook,
+        name: "Books Management",
+      },
+      {
+        description: "dashboard for admin.",
+        name: "Admin DashBoard",
+      },
+      {
+        description: "responsive for different screen sizes",
+        name: "Responsive Design",
+      },
+      {
+        description: "users can provide reviews about books",
+        name: "Reviews",
+      },
+
+
+    ],
+    Stack: [
+      {
+        name: "ReactJs",
+        Icon: FaReact,
+        link: "#",
+      },
+      {
+        Icon: SiTailwindcss,
+        name: "TailwindCss",
+        link: "#",
+      },
+    
+      {
+        Icon: SiExpress,
+        name: "ExpressJs",
+        link: "#",
+      },
+      {
+        Icon: SiMongodb,
+        name: "MongoDB",
+        link: "#",
+      },
+    
+    ],
+  },
+ 
+
+];
