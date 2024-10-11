@@ -38,7 +38,7 @@ export const projectData: projectType[] = [
   {
     image: libraryOnline,
     category: "MERN",
-    name: "Library-Online ",
+    name: "Library-Online",
     description:
       "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss, and more ",
     link: "#",
@@ -82,7 +82,7 @@ export let projectsDetailData: projectDetailType[] = [
     name: "shope-Online",
     description:
       "E-commerce site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss,Shadcn/ui ,typeScript and more",
-    link: "",
+    link: "shop-online-static.netlify.app/",
     github: "https://github.com/Azhar-lone/shop-online.git",
     features: [
       {
@@ -149,7 +149,7 @@ export let projectsDetailData: projectDetailType[] = [
   {
     image: libraryOnline,
     category: "MERN",
-    name: "Library-Online ",
+    name: "Library-Online",
     description:
       "Library Management site developed with React,Nodejs,Mongoose,Expressjs ,TailwindCss, and more ",
     link: "#",
