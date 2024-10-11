@@ -9,7 +9,7 @@ const siteUrl=  "https://azhar-lone-portfolio.vercel.app"
       lastModified: currentDate,
     },
     {
-      url: process.env.SITE_URL || siteUrl+"/projects",
+      url: `${process.env.SITE_URL || siteUrl}/projects`,
       lastModified: currentDate,
     },
   ];
