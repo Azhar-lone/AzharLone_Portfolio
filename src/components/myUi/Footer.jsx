@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 
@@ -38,7 +37,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex gap-5">
-        <h1> azharlonem@gmail.com</h1> <h1> +923555812744</h1>
+        <Link
+          href="mailto:azharlonem@gmail.com"
+          className="text-lg  hover:underline"
+        >
+          {" "}
+          azharlonem@gmail.com
+        </Link>{" "}
+        <Link href="tel:+923555812744"  className="text-lg  hover:underline"> +923555812744</Link>
       </div>
       <h1 className="text-muted">2024 copyrights @Azhar-lone</h1>
     </Container>

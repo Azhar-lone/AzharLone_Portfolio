@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 // Framer motion
 // icons
 import { Download } from "lucide-react";
@@ -17,7 +17,7 @@ const Introduction: React.FC = () => {
         <div className="  gap-2 flex flex-col   items-center">
           {/* image */}
 
-          <Image src={AzharLone} alt="Img" height={2548} width={1640 } />
+          <Image src={AzharLone} alt="Img" height={2548} width={1640} />
           {/* Introduction text section */}
           <div className="flex flex-col  w-full gap-4">
             <h1 className="text-primary text-4xl border-b-2 h-fit w-fit border-primary ">
@@ -25,31 +25,45 @@ const Introduction: React.FC = () => {
             </h1>
             <h1 className=" text-4xl  h-fit w-fit ">Full Stack Developer</h1>
             <div className=" flex gap-2">
-              <h1>azharlonem@gmail.com</h1>
-              <h1>+923555812744</h1>
+              <Link
+                href="mailto:azharlonem@gmail.com"
+                className="text-lg  hover:underline hover:text-blue-500"
+              >
+                azharlonem@gmail.com
+              </Link>
+              <Link
+                href="tel:+923555812744"
+                className="text-lg  hover:underline  hover:text-blue-500"
+              >
+                {" "}
+                +923555812744
+              </Link>
             </div>
           </div>
         </div>
         {/* h2s */}
         <div className="flex gap-3 p-2">
           <div className="flex gap-2 ">
-            <a href="https://github.com/Azhar-lone" target="_blank">
+            <Link href="https://github.com/Azhar-lone" target="_blank">
               {" "}
               <RiGithubFill className="size-10   bg-secondary p-2 hover:bg-secondary/50 rounded border " />
-            </a>
-            <a href="https://www.linkedin.com/in/Azhar-lonem" target="_blank">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/Azhar-lonem"
+              target="_blank"
+            >
               {" "}
               <RiLinkedinFill className="size-10  bg-secondary p-2 hover:bg-secondary/50 rounded border  " />
-            </a>
+            </Link>
           </div>
-          <a
+          <Link
             href="/AzharResume.pdf"
             download={"AzharLone_CV.pdf"}
             className="flex gap-1 animate-bounce bg-secondary p-2 hover:bg-secondary/50 rounded border  "
           >
             Download CV
             <Download />
-          </a>
+          </Link>
         </div>
       </ScrollArea>
     </div>
