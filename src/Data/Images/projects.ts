@@ -4,7 +4,7 @@ import libraryOnline from "@/Data/Images/projects/library-online.png";
 import portfolio from "@/Data/Images/projects/portfolio.png";
 import shadcnAdmin from "@/Data/Images/projects/shadcn-admin.png";
 import shadcnYoutube from "@/Data/Images/projects/shadcn-youtube.png";
-
+import junaidAmazone from "@/Data/Images/projects/junaid-amazone.png"
 // Icons
 // icons
 import {
@@ -71,6 +71,17 @@ export const projectData: projectType[] = [
     link: "https://shadcn-youtube.vercel.app/",
     github: "https://github.com/Azhar-lone/Shadcn-Youtube",
   },
+  {
+    image: junaidAmazone,
+    category: "NextJs",
+    name: "My-Amazone-Scale",
+    description:
+      "personel website for junaid developed with NextJs,TailwindCss,typeScript,shadcnUi and more... ",
+    link: "https://junaid-amazone.vercel.app/",
+    github: "https://github.com/Azhar-lone/junaid-amazone",
+  },
+ 
+
 ];
 
 export let categories: string[] = ["All", "MERN", "NextJs", "React"];
