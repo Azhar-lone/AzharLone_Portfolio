@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { projectsDetailData } from "@/Data/Images/projects";
 // components
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Container from "@/components/myUi/Container";
+import MaintainancePage from "@/components/myUi/Maintainance";
 // Types
 import { CardType } from "@/types/Projects";
 import type { Metadata } from "next";
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: "Project Not Found",
+    title: "under maintaince",
     description: "No project found for the specified slug.",
     keywords: ["Project not found", "Azhar Lone projects"],
     authors: [
@@ -51,7 +51,7 @@ export default function ProjectDetails({ params }: Props) {
   const project = getProjectBySlug(params.slug);
 
   if (!project) {
-    return notFound();
+    return <MaintainancePage />;
   }
 
   return (

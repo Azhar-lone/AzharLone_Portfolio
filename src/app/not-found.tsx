@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 
-export default function GeneralError() {
+export default function NotFound() {
     const {replace,back}=useRouter()
     
   return (

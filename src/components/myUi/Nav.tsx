@@ -54,7 +54,7 @@ let NavItems = [
   },
   {
     text: "Blogs",
-    href: "#",
+    href: "/blogs",
   },
 ];
 

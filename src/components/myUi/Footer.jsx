@@ -39,12 +39,18 @@ const Footer = () => {
       <div className="flex gap-5">
         <Link
           href="mailto:azharlonem@gmail.com"
-          className="text-lg  hover:underline"
+          className="text-lg  hover:underline  hover:text-blue-500"
         >
           {" "}
           azharlonem@gmail.com
         </Link>{" "}
-        <Link href="tel:+923555812744"  className="text-lg  hover:underline"> +923555812744</Link>
+        <Link
+          href="tel:+923555812744"
+          className="text-lg  hover:underline  hover:text-blue-500"
+        >
+          {" "}
+          +923555812744
+        </Link>
       </div>
       <h1 className="text-muted">2024 copyrights @Azhar-lone</h1>
     </Container>
