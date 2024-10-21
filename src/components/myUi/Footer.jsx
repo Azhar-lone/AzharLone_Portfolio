@@ -7,6 +7,7 @@ import {
   RiLinkedinFill,
   RiGithubFill,
   RiTwitterXFill,
+  RiWhatsappLine,
 } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import { FaUpwork } from "react-icons/fa6";
@@ -85,9 +86,9 @@ const icons = [
     name: RiLinkedinFill,
     text: "LinkedIn",
   },
-  // {
-  //   path: "https://www.upwork.com/freelancers/~01c3b64854d63a958a",
-  //   name: FaUpwork,
-  //   text: "upwork",
-  // },
+  {
+    path: "https://wa.me/923555812744",
+    name: RiWhatsappLine,
+    text: "WhatsApp",
+  },
 ];

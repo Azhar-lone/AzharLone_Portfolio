@@ -4,7 +4,7 @@ import Link from "next/link";
 // Framer motion
 // icons
 import { Download } from "lucide-react";
-import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
+import { RiLinkedinFill, RiGithubFill ,  RiWhatsappFill} from "react-icons/ri";
 import { ScrollArea } from "@/components/ui/scroll-area";
 // images
 import AzharLone from "@/Data/Images/AzharLone.jpg";
@@ -55,6 +55,14 @@ const Introduction: React.FC = () => {
               {" "}
               <RiLinkedinFill className="size-10  bg-secondary p-2 hover:bg-secondary/50 rounded border  " />
             </Link>
+            <Link
+              href="https://wa.me/923555812744"
+              target="_blank"
+            >
+              {" "}
+              <RiWhatsappFill className="size-10  bg-secondary p-2 hover:bg-secondary/50 rounded border  " />
+            </Link>
+
           </div>
           <Link
             href="/AzharResume.pdf"
