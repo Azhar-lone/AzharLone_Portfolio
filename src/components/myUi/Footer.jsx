@@ -87,7 +87,7 @@ const icons = [
     text: "LinkedIn",
   },
   {
-    path: "https://wa.me/923555812744",
+    path: `https://wa.me/923555812744?text=${encodeURIComponent("Hello!/nHow can i hire you?")}`,
     name: RiWhatsappLine,
     text: "WhatsApp",
   },
