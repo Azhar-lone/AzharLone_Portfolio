@@ -57,7 +57,7 @@ const Introduction: React.FC = () => {
             </Link>
             <Link
               href={`https://wa.me/923555812744?text=${encodeURIComponent(
-                "Hello!/nI'd like to inquire you about your services."
+                "Hello!\nI'd like to inquire you about your services."
               )}`}
               target="_blank"
             >
