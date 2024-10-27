@@ -17,7 +17,7 @@ const Introduction: React.FC = () => {
         <div className="  gap-2 flex flex-col   items-center">
           {/* image */}
 
-          <Image src={AzharLone} alt="Img" height={2548} width={1640} />
+          <Image src={AzharLone} alt="Img" height={2548} width={1640} className="rounded-tl-2xl rounded-br-2xl"/>
           {/* Introduction text section */}
           <div className="flex flex-col  w-full gap-4">
             <h1 className="text-primary text-4xl border-b-2 h-fit w-fit border-primary ">
