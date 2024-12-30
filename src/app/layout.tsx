@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       url: process.env.SITE_URL || siteUrl,
     },
   ],
-  publisher: "vercel",
+  publisher: "Azhar Lone",
   openGraph: {
     images: "/og-image.jpg",
   },
