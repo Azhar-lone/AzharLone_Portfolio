@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
           </Button>
         ))}
       </div>
-      <div className="flex  gap-5 flex-wrap  flex-row  mx-auto w-[90%]">
+      <div className="flex gap-5 flex-wrap  flex-row ">
         {filteredProjects.map((project: projectType, index: number) => {
           return <ProjectCard project={project} key={index} />;
         })}

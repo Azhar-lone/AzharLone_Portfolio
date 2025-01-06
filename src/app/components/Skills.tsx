@@ -21,6 +21,8 @@ import {
   SiPostgresql,
   SiLinux,
   SiNextdotjs,
+  SiPython,
+SiDjango
 } from "react-icons/si";
 interface progressType {
   value: number;
@@ -113,6 +115,18 @@ export default function Skills() {
       value: 0,
       text: "Nextjs",
       Icon: SiNextdotjs,
+      experience: "1 Year",
+    },
+    {
+      value: 0,
+      text: "Python",
+      Icon: SiPython,
+      experience: "6+ months",
+    },
+    {
+      value: 0,
+      text: "Django",
+      Icon: SiDjango,
       experience: "6+ months",
     },
   ]);
@@ -235,9 +249,21 @@ let progressArray: progressType[] = [
     experience: "1+ years",
   },
   {
-    value: 50,
+    value: 80,
     text: "Nextjs",
     Icon: SiNextdotjs,
+    experience: "1+ Years",
+  },
+  {
+    value: 70,
+    text: "Python",
+    Icon: SiPython,
+    experience: "6+ months",
+  },
+  {
+    value: 60,
+    text: "Django",
+    Icon: SiDjango,
     experience: "6+ months",
   },
 ];
