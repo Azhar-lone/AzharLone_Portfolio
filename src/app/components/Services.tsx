@@ -79,4 +79,9 @@ let services: services[] = [
     interfaces to implementing complex server-side logic,
      I ensure a seamless and cohesive application experience.`,
   },
+
+  {
+    title: "Education Portal Development",
+    discription: `I can develop applications for your school college and any institute you have.`,
+  },
 ];
