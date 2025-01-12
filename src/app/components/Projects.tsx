@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
           </Button>
         ))}
       </div>
-      <div className="flex gap-5 flex-wrap  flex-row justify-center ">
+      <div className='grid gap-5  md:grid-cols-2  2xl:grid-cols-4'>
         {filteredProjects.map((project: projectType, index: number) => {
           return <ProjectCard project={project} key={index} />;
         })}

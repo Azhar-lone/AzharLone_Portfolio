@@ -5,7 +5,6 @@ import "@/styles/globals.css";
 // components
 import Nav from "@/components/myUi/Nav";
 import Footer from "@/components/myUi/Footer";
-
 // context
 import { ThemeProvider } from "@/hooks/theme-provider";
 
@@ -60,16 +59,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Nav />
-          {children}
-          <Footer />
+
+            <Nav />
+            {children}
+            <Footer />
+
         </ThemeProvider>
+
       </body>
     </html>
   );
